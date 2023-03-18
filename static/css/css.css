@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
    
+/*              GENERIC             */
+
 body{
     background-color: #fffaf0;
     margin: 0;
+    width: 100%;
 }
-
 header{
     font-style: italic;
     font-weight: bold;
-    width: 100%;
     border: rgb(223, 132, 223) solid 2px;
     display: flex;
     justify-content: center;
@@ -17,64 +18,123 @@ header{
     position: fixed absolute;
     height: 15%;
 }
-
 header img{
     width: 5%;
 }
-
 header ul{
     list-style-type: none;
-    
 }
-
 header li{
     display: inline;
     margin: 0 20px;
 }
-
 header a{
     text-decoration: none;
     color: gray;
 }
-
-.nav, .social-media{
-    margin-left: 3%;
-}
-
 .nav::before, .nav::after{
     content: "|";
     font-size: 25px;
 }
-
+.social-media{
+    margin-left: 3%;
+}
 .social-media a{
     color: purple;
     font-size: 120%;
 }
-
 header a:hover, #social-media a:hover{
     color: black;
 }
-
 section{
-   padding: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+.topo{
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin: 20px 5% 20px;
+    height: 40px;
+}
+
+/*              PROJECT             */
+.projeto{
+   height: 800px;
    display: flex;
    justify-content: center;
    align-items: center;
-
 }
 
-section img{
+.projeto img{
     width: 30%;
     transform: scale3d();
     transition: width 2s, transform 2s ;
-  
 }
 
-section img:hover{
-    width: 50%;
-    
-  
+.projeto img:hover{
+    width: 50%;;
 }
+
+
+/*              PACKAGE             */
+.pacote{
+    text-align: center;
+}
+.pacote li{
+    list-style-type: none;
+    display: inline;
+}
+.pacote img{
+    width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+/*              WHO I AM             */
+.quem-sou{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border: purple solid 2px;
+    border-radius: 10px;
+}
+.lett-eu{
+    width: 70%;
+    padding: 40px;
+    text-align: justify;
+}
+.lett-eu h2{
+    text-align: center;
+    font-style: italic;
+}
+.quem-sou img{
+    width: 40%;
+    padding: 30px;
+}
+
+/*              FOOTER             */
+footer{
+    background-color: blueviolet;
+    padding: 20px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+
+
 
 /*
 nav{
