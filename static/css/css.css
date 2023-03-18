@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+   
+body{
+    background-color: #fffaf0;
+    margin: 0;
+}
+
+header{
+    font-style: italic;
+    font-weight: bold;
+    width: 100%;
+    border: rgb(223, 132, 223) solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed absolute;
+    height: 15%;
+}
+
+header img{
+    width: 5%;
+}
+
+header ul{
+    list-style-type: none;
+    
+}
+
+header li{
+    display: inline;
+    margin: 0 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: gray;
+}
+
+.nav, .social-media{
+    margin-left: 3%;
+}
+
+.nav::before, .nav::after{
+    content: "|";
+    font-size: 25px;
+}
+
+.social-media a{
+    color: purple;
+    font-size: 120%;
+}
+
+header a:hover, #social-media a:hover{
+    color: black;
+}
+
+section{
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+section img{
+    width: 30%;
+    transform: scale3d();
+    transition: width 2s, transform 2s ;
+  
+}
+
+section img:hover{
+    width: 50%;
+    
+  
+}
+
+/*
+nav{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    background-color: #FFEDE6;
+    color: #7AC6C8;
+}
+
+nav h2{
+    font-family: 'Hurricane', cursive;
+}
+
+button{
+    margin: 10px 0px 10px 10px;
+    color: #7AC6C8;
+}
+
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    display: flex;
+    justify-items: center;
+    padding: 5px;    
+}
+
+.sobre{
+    display: flex;
+}
+
+footer{
+    background: #FFEDE6;
+    margin-top: 10px;
+    font-family: 'Hurricane';
+}
+*/
