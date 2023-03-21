@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
    
 /*              GENERIC             */
 :root{
@@ -7,7 +8,7 @@
     --hover: gray;
 }
 body{
-    background-color: #fffaf0;
+    background-color: #CBBCB9;
     margin: 0;
     width: 100%;
 }
@@ -19,14 +20,16 @@ section{
 /*              NAVBAR             */
 nav img{
     width: 5%;
+    margin-left: 2%;
 }
 nav{
-    background-color: rgba(201, 231, 202, 0.7);
+    background-color: rgba(236, 236, 236, 0.7);
     font-style: italic;
     font-weight: bold;
     border-bottom: var(--tema) solid 2px;
 }
 .navbar-brand{
+    font-family: "Dancing Script";
     padding-left: 30px;
 }
 .nav-item{
@@ -38,9 +41,13 @@ nav{
 .nav-item a:hover, .medias a:hover{
     color: var(--hover);
 }
+.medias{
+    margin-right: 3%;
+}
 .medias a{
     color: var(--tema);
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0 20px;
 }
 
 /*              INITIAL             */
