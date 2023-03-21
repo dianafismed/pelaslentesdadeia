@@ -2,36 +2,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
    
 /*              GENERIC             */
-
+:root{
+    --tema: red;
+    --hover: gray;
+}
 body{
     background-color: #fffaf0;
     margin: 0;
     width: 100%;
 }
-header{
-    font-style: italic;
-    font-weight: bold;
-    border: rgb(223, 132, 223) solid 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed absolute;
-    height: 15%;
+section{
+    padding-top: 100px; 
 }
+
+
+/*              NAVBAR             */
 header img{
     width: 5%;
 }
-header ul{
-    list-style-type: none;
+nav{
+    font-style: italic;
+    border-bottom: var(--tema) solid 2px;
 }
-header li{
-    display: inline;
-    margin: 0 20px;
+.nav-item{
+    padding: 0 20px;
 }
-header a{
-    text-decoration: none;
-    color: gray;
+.nav-item a{
+    color: var(--tema);
 }
+.nav-item a:hover, .medias a:hover{
+    color: var(--hover);
+}
+.medias a{
+    color: var(--tema);
+    margin: auto;
+    font-size: 20px;
+}
+
+/*              INITIAL             */
+#carrossel{
+    width: 50%;
+}
+.carousel{
+    transition-duration: .01ms;
+    
+}
+.carousel-item{
+    transition-duration: .01ms;
+}
+
+
+@media (max-width:320px){
+    
+}
+
+@media (max-width:768px) {
+    header img{
+        display: none;
+    }
+    .navbar-nav{
+        background-color: white;
+    }
+    .nav-item{
+        padding-left: 20px;
+    }
+    .nav-item a{
+        color: var(--tema);
+    }
+    #carrossel{width: 100%;
+    }
+}
+/*
+
 .nav::before, .nav::after{
     content: "|";
     font-size: 25px;
@@ -46,18 +88,8 @@ header a{
 header a:hover, #social-media a:hover{
     color: black;
 }
-section{
-    padding: 10px;
-    margin-top: 40px;
-}
-.topo{
-    text-decoration: none;
-    display: flex;
-    justify-content: end;
-    margin: 20px 5% 20px;
-    height: 40px;
-}
 
+*/
 /*              PROJECT             */
 .projeto{
    height: 800px;
