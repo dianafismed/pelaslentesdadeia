@@ -3,7 +3,7 @@
    
 /*              GENERIC             */
 :root{
-    --tema: red;
+    --tema: rgb(201, 28, 201);
     --hover: gray;
 }
 body{
@@ -17,12 +17,17 @@ section{
 
 
 /*              NAVBAR             */
-header img{
+nav img{
     width: 5%;
 }
 nav{
+    background-color: rgba(201, 231, 202, 0.7);
     font-style: italic;
+    font-weight: bold;
     border-bottom: var(--tema) solid 2px;
+}
+.navbar-brand{
+    padding-left: 30px;
 }
 .nav-item{
     padding: 0 20px;
@@ -35,7 +40,6 @@ nav{
 }
 .medias a{
     color: var(--tema);
-    margin: auto;
     font-size: 20px;
 }
 
@@ -43,19 +47,92 @@ nav{
 #carrossel{
     width: 50%;
 }
-.carousel{
-    transition-duration: .01ms;
-    
+
+
+/*              PROJECT             */
+.projeto{
+   height: 800px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.carousel-item{
-    transition-duration: .01ms;
+.projeto img{
+    width: 30%;
+    transform: scale3d();
+    transition: width 2s, transform 2s ;
+}
+.projeto img:hover{
+    width: 50%;;
 }
 
 
-@media (max-width:320px){
-    
+/*              PACKAGE             */
+.pacote{
+    text-align: center;
+}
+.pacote li{
+    list-style-type: none;
+    display: inline;
+}
+.pacote img{
+    background-color: rgb(142, 46, 231);
+    margin: 10px;
+    width: 45%;
 }
 
+/*              WHO I AM        */  
+.quem-sou{
+    padding: 10px;
+}  
+.letters{
+    text-align: justify;
+    align-self: center;
+}
+.letters h2{
+    font-style: italic;
+    padding: 20px;
+}
+.quem-sou img{
+    width: 87%;  
+    border: var(--tema) 7px double;
+    border-radius: 10px;
+}
+
+
+/*              FOOTER             */
+footer{
+    border-top: var(--tema) solid 1px;
+    margin-top: 30px;
+    padding: 20px;
+}
+footer img{
+    width: 40%;
+}
+footer li{
+    list-style-type: none;
+    margin-left: -30px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--tema);
+}
+footer a:hover{
+    color: var(--hover);
+}
+.footer-medias{
+  padding: 5%; 
+}
+.footer-medias a{ 
+    font-size: 25px;
+    margin: 20px;
+}
+.footer-creditos h5{
+    padding: 20px;
+}
+
+
+
+/*              MEDIAS             */
 @media (max-width:768px) {
     header img{
         display: none;
@@ -71,140 +148,10 @@ nav{
     }
     #carrossel{width: 100%;
     }
+    .pacote img{
+        width: 90%;
+    }
+    .quem-sou img{
+        width: 100%;
+    }
 }
-/*
-
-.nav::before, .nav::after{
-    content: "|";
-    font-size: 25px;
-}
-.social-media{
-    margin-left: 3%;
-}
-.social-media a{
-    color: purple;
-    font-size: 120%;
-}
-header a:hover, #social-media a:hover{
-    color: black;
-}
-
-*/
-/*              PROJECT             */
-.projeto{
-   height: 800px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.projeto img{
-    width: 30%;
-    transform: scale3d();
-    transition: width 2s, transform 2s ;
-}
-
-.projeto img:hover{
-    width: 50%;;
-}
-
-
-/*              PACKAGE             */
-.pacote{
-    text-align: center;
-}
-.pacote li{
-    list-style-type: none;
-    display: inline;
-}
-.pacote img{
-    width: 500px;
-    height: 400px;
-    background-color: blueviolet;
-    margin: 10px;
-}
-
-/*              WHO I AM             */
-.quem-sou{
-    width: 90%;
-    display: flex;
-    margin: auto;
-    border: purple solid 2px;
-    border-radius: 10px;
-}
-.lett-eu{
-    width: 70%;
-    padding: 40px;
-    text-align: justify;
-}
-.lett-eu h2{
-    text-align: center;
-    font-style: italic;
-}
-.quem-sou img{
-    width: 40%;
-    padding: 30px;
-}
-
-/*              FOOTER             */
-footer{
-    background-color: blueviolet;
-    padding: 20px;
-}
-footer ul{
-    display: flex;
-    justify-content: center;
-}
-footer li{
-    list-style-type: none;
-}
-footer a{
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-/*
-nav{
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
-    background-color: #FFEDE6;
-    color: #7AC6C8;
-}
-
-nav h2{
-    font-family: 'Hurricane', cursive;
-}
-
-button{
-    margin: 10px 0px 10px 10px;
-    color: #7AC6C8;
-}
-
-
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-}
-
-article{
-    display: flex;
-    justify-items: center;
-    padding: 5px;    
-}
-
-.sobre{
-    display: flex;
-}
-
-footer{
-    background: #FFEDE6;
-    margin-top: 10px;
-    font-family: 'Hurricane';
-}
-*/
