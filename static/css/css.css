@@ -58,10 +58,9 @@ nav{
 
 /*              PROJECT             */
 .projeto{
-   height: 800px;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   flex-wrap: nowrap;
+
 }
 .projeto img{
     width: 30%;
@@ -69,13 +68,14 @@ nav{
     transition: width 2s, transform 2s ;
 }
 .projeto img:hover{
-    width: 50%;
+    width: 35%;
 }
 
 
 /*              PACKAGE             */
 .pacote{
     text-align: center;
+    background-color: blue;
 }
 .pacote li{
     list-style-type: none;
@@ -85,11 +85,6 @@ nav{
     background-color: rgb(142, 46, 231);
     margin: 10px;
     width: 45%;
-    transform: scale3d();
-    transition: width 1s, transform 1s ;
-}
-.pacote img:hover{
-    width: 50%;
 }
 
 /*              WHO I AM        */  
@@ -105,6 +100,7 @@ nav{
     padding: 20px;
 }
 .quem-sou img{
+    margin-top: 15%;
     width: 87%;  
     border: var(--tema) 7px double;
     border-radius: 10px;
@@ -166,7 +162,5 @@ footer a:hover{
     .quem-sou img{
         width: 100%;
     }
-    .pacote img:hover{
-        width: 100%;
-    }
+ 
 }
